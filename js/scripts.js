@@ -1,13 +1,19 @@
-$(document).ready(function() {
-    $("#id").submit(function(event) {
-       var result1 = $("input#groclist").val();
-       $("#things").show();
-       $("#things").append("<li>" + result1+ "</li>");
+// Front-end logic //
 
-       event.preventDefault();
+$(document).ready(function() {
+    $("#list").submit(function(event) {
+        $("#list").toggle();
+        var result1 = $("input#groclist").val();
+        $("#things").show();
+        $("#things").append("<li>" + result1+ "</li>");
+
+        event.preventDefault();
 
 
     });
     
 });
+
+// Back-end logic //
+
     
